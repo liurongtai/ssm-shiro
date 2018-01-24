@@ -7,4 +7,9 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	<typeAliases>
 		<package name="com.ssm.entity"/>
 	</typeAliases>
+	<!-- 配置分页查询插件 -->
+	<plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+        </plugin>
+    </plugins>
 </configuration>

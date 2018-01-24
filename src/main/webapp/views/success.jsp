@@ -10,14 +10,18 @@
 </head>
 <body>
 	欢迎<shiro:principal/>登录
+	
 	   <shiro:hasAnyRoles name="manager">
-	   		<shiro:principal/>有manager:*权限
+	   		<shiro:principal/>有manager角色
 	   </shiro:hasAnyRoles>
+	   
 	   <shiro:authenticated>
 	   		<shiro:principal/>被认证
 	   </shiro:authenticated>
+	   
 	   <shiro:hasPermission name="manager:*">
 	   		<shiro:principal/>有manager:*权限
 	   </shiro:hasPermission>
+	   
 </body>
 </html>
